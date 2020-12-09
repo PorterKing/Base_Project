@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_roundshape_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/dialog_divider_horizon"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:showDividers="end">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:textColor="@color/textColorMajor"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:textColorHighlight="@color/transparent"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/textColorMinor"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/dialog_divider_vertical"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/dialog_left_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textColorAssist"
+            android:textSize="16dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/dialog_btn_bg"/>
+        <TextView
+            android:id="@+id/dialog_middle_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="16dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@drawable/dialog_btn_bg"/>
+       <TextView
+            android:id="@+id/dialog_right_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="16dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+           android:background="@drawable/dialog_btn_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

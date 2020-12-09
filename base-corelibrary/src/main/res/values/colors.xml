@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="themeColor"            >#FFFFFF</color><!--主题色-->
+    <color name="themeColorMinor"       >#F8F8F8</color><!--主题浅色-->
+    <color name="backgroundColor"       >#FFFFFF</color><!--页面背景颜色-->
+
+    <color name="textColorMajor"        >#333333</color><!--内容中首要文字信息，标题，名称等-->
+    <color name="textColorMinor"        >#666666</color><!--不予要强调的文字信息，如底部固定栏的操作文字等-->
+    <color name="textColorAssist"       >#999999</color><!--辅助文字信息或提示文字信息，一般与主要文字形成对比-->
+    <color name="textColorHint"         >#A3A3A3</color><!--占位文字颜色-->
+    <color name="textColorWhite"        >#FFFFFF</color>
+
+    <color name="splitColorMajor"       >#DFDFDF</color><!--底部分割线边框颜色-->
+    <color name="splitColorMinor"       >#EEEEEE</color><!--普通分割线边框颜色-->
+    <color name="splitColorAssist"      >#F0F0F0</color><!--普通分割线边框颜色-->
+    <color name="arrowColor"            >#989898</color><!--箭头颜色-->
+
+    <color name="blue"                  >#0091FF</color><!--状态，类别等需要划分用色较多之一-->
+    <color name="red"                   >#FF0100</color><!--状态，类别等需要划分用色较多之一-->
+    <color name="grey"                  >#666666</color><!--状态，类别等需要划分用色较多之一-->
+    <color name="white"                 >#ffffff</color><!--状态，类别等需要划分用色较多之一-->
+    <color name="orange"                >#FFA500</color><!--状态，类别等需要划分用色较多之一-->
+    <color name="transparent"           >#00000000</color>
+
+    <color name="new_color_eeeeee">#eeeeee</color>
+    <color name="new_color_cccccc">#cccccc</color>
+    <color name="new_color_f8f8f8">#f8f8f8</color>
+    <color name="new_color_f6f6f6">#f6f6f6</color>
+    <color name="new_color_d2d2d2">#d2d2d2</color>
+    <color name="new_color_4a4a4a">#4a4a4a</color>
+    <color name="new_color_333333">#333333</color>
+    <color name="new_color_999999">#999999</color>
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="index_background_color">#F8F8F8</color><!--首页背景颜色-->
+
+    <color name="tab_text_color_select">@color/textColorMajor</color>
+    <color name="tab_text_color_unselect">@color/textColorAssist</color>
+
+</resources>

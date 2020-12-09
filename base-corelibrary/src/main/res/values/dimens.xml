@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <dimen name="tab_height">48dp</dimen>
+
+        <!--文字尺寸-->
+        <dimen name="font_large">18sp</dimen>
+        <dimen name="font_medium">16sp</dimen>
+        <dimen name="font_regular">14sp</dimen>
+        <dimen name="font_small">12sp</dimen>
+        <dimen name="font_tiny">10sp</dimen>
+
+        <!-- 页面指示器尺寸 -->
+        <dimen name="indicate_space">8dip</dimen>
+        <dimen name="indicate_height">4dip</dimen>
+        <dimen name="indicate_width">8dip</dimen>
+
+        <!-- 页面边界 间隔 -->
+        <dimen name="normal_border_space">15dp</dimen>
+
+
+</resources>

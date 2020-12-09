@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- HXProgressDialog的布局文件 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toast_frame" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" 
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="center"
+            android:src="@drawable/waiting" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:paddingBottom="5dip"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3dip"
+            android:paddingTop="5dip" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+include ':base-corelibrary'
+include ':netlibrary'
+include ':dblibrary'
+include ':app'
+rootProject.name = "Base_Project"

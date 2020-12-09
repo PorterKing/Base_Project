@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="net_error">请求失败，请稍后再试…</string>
+    <string name="net_unavailable">网络连接不可用</string>
+    <string name="net_time_out">网络连接超时</string>
+    <string name="net_process">正在请求数据</string>
+    <string name="file_not_found">未找到文件!</string>
+    <string name="io_error">解析错误</string>
+
+</resources>

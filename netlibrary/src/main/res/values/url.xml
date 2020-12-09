@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--正式ip-->
+    <string name="base_ip">http://yinsfinance.com</string>
+
+    <!--舆情数据请求ip-->
+    <string name="other_ip">http://iwc-yuqing-openapi.wencai</string>
+
+</resources>
