@@ -20,7 +20,6 @@ import javax.crypto.NoSuchPaddingException;
 
 /**
  * RSA加密工具
- * Created by zhoujianyu@myhexin.com on 16-9-8.
  */
 public class RSAEngineer {
 
