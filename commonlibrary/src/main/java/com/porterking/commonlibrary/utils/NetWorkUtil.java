@@ -1,4 +1,4 @@
-package com.porterking.netlibrary.work;
+package com.porterking.commonlibrary.utils;
 
 import android.Manifest;
 import android.content.Context;
@@ -7,8 +7,8 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 
+import com.porterking.commonlibrary.BCHelper;
 import com.porterking.commonlibrary.utils.runtimepermission.RuntimePermissionUtil;
-import com.porterking.netlibrary.NetHelper;
 
 
 /**
@@ -24,7 +24,7 @@ public class NetWorkUtil {
     public static boolean isNetWork() {
 
         // 得到系统服务，网络管理器
-        ConnectivityManager manager = (ConnectivityManager) NetHelper.getInstance().getContext()
+        ConnectivityManager manager = (ConnectivityManager) BCHelper.getInstance().getContext()
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info = manager.getActiveNetworkInfo();  // 获得激活的网络信息
         if (info != null) {
@@ -50,7 +50,7 @@ public class NetWorkUtil {
     public static String networkInfo() {
         String info = "unknown";
 
-        ConnectivityManager connectivityManager = (ConnectivityManager) NetHelper.getInstance().getContext()
+        ConnectivityManager connectivityManager = (ConnectivityManager) BCHelper.getInstance().getContext()
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         if (connectivityManager != null) {
             NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -77,9 +77,9 @@ public class NetWorkUtil {
     }
 
     private static String getNetworkOperatorName() {
-        if (RuntimePermissionUtil.checkSelfPermission(NetHelper.getInstance().getContext(), (Manifest.permission
+        if (RuntimePermissionUtil.checkSelfPermission(BCHelper.getInstance().getContext(), (Manifest.permission
                 .READ_PHONE_STATE))) {
-            TelephonyManager telephonyManager = (TelephonyManager) NetHelper.getInstance().getContext().getSystemService
+            TelephonyManager telephonyManager = (TelephonyManager) BCHelper.getInstance().getContext().getSystemService
                     (Context.TELEPHONY_SERVICE);
             return telephonyManager.getNetworkOperatorName();
         } else {

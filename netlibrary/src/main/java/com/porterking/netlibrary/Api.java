@@ -3,13 +3,13 @@ package com.porterking.netlibrary;
 
 import com.porterking.netlibrary.interceptor.BaseUrlInterceptor;
 import com.porterking.netlibrary.interceptor.HeadInterceptor;
-import com.porterking.netlibrary.interceptor.LogInterceptor;
 
 import java.util.HashMap;
 
+import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory;
 import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Api {
@@ -31,12 +31,12 @@ public class Api {
             OkHttpClient client = new OkHttpClient.Builder()
                     .addInterceptor(new BaseUrlInterceptor())
                     .addInterceptor(new HeadInterceptor())
-                    .addInterceptor(new LogInterceptor())
+                    .addInterceptor(new HttpLoggingInterceptor())
                     .build();
             SERVICE = new Retrofit.Builder()
                     .baseUrl(NetHelper.getInstance().getContext().getResources().getString(R.string.base_ip))
                     .addConverterFactory(GsonConverterFactory.create())
-                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                    .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                     .client(client)
                     .build().create(ApiService.class);
         }

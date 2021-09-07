@@ -13,7 +13,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/base-corelibrary" />
+            <option value="$PROJECT_DIR$/commonlibrary" />
             <option value="$PROJECT_DIR$/dblibrary" />
             <option value="$PROJECT_DIR$/netlibrary" />
           </set>

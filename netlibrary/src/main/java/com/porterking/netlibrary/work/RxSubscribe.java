@@ -2,7 +2,7 @@ package com.porterking.netlibrary.work;
 
 import android.util.Log;
 
-import com.jcb.base_corelibrary.manager.ProgressDialogManager;
+import com.porterking.commonlibrary.manager.ProgressDialogManager;
 import com.porterking.netlibrary.NetHelper;
 import com.porterking.netlibrary.R;
 

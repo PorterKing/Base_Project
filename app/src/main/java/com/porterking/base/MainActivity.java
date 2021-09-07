@@ -1,7 +1,7 @@
 package com.porterking.base;
 
-import com.jcb.base_corelibrary.ui.BaseActivity;
-import com.jcb.base_corelibrary.ui.IBasePresenter;
+import com.porterking.commonlibrary.ui.BaseActivity;
+import com.porterking.commonlibrary.ui.IBasePresenter;
 
 public class MainActivity extends BaseActivity {
 

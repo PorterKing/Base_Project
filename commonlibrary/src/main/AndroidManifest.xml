@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.porterking.commonlibrary">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application >
+        <provider
+            android:authorities="${applicationId).androidx-startup"
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="com.porterking.commonlibrary.AppInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

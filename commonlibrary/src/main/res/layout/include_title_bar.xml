@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.porterking.commonlibrary.view.titlebar.TitleBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/include_title_bar_leftview_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/include_title_bar_rightview_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/include_title_bar_middleview_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"/>
+
+</com.porterking.commonlibrary.view.titlebar.TitleBar>
