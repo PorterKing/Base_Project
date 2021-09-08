@@ -8,8 +8,7 @@ import android.net.Uri;
 import android.provider.Settings;
 import android.text.TextUtils;
 
-import com.porterking.commonlibrary.constant.SPConstant;
-import com.porterking.commonlibrary.manager.SPManager;
+import com.porterking.commonlibrary.manager.MMKVManager;
 import com.porterking.commonlibrary.utils.LogUtils;
 
 import java.util.ArrayList;
@@ -94,11 +93,11 @@ public class RuntimePermissionUtil {
     }
 
     private static void saveHasPermissionRequested(String permission) {
-            SPManager.saveBoolean(SPConstant.SP_NAME_RUNTIME_PERMISSION, permission, true);
+        MMKVManager.defaultMMKV.setBoolean(permission, true);
     }
 
     private static boolean getHasPermissionRequested(String permission) {
-        return SPManager.getBoolean(SPConstant.SP_NAME_RUNTIME_PERMISSION, permission, false);
+        return MMKVManager.defaultMMKV.getBoolean(permission,false);
     }
 
     private static void setPermissionCallbackModel(String[] permissions, PermissionRequestManager.OnPermissionRequestResultCallback callback) {

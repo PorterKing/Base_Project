@@ -52,11 +52,11 @@ class DesCrypt(private var desKey: String) {
     }
 
 
-    fun base64Encode(s: ByteArray?): String {
+    private fun base64Encode(s: ByteArray?): String {
         return Base64.encodeToString(s, Base64.DEFAULT)
     }
 
-    fun base64Decode(s: String?): ByteArray {
+    private fun base64Decode(s: String?): ByteArray {
         return Base64.decode(s, Base64.DEFAULT)
     }
 }

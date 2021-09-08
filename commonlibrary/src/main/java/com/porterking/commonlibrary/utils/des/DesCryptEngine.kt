@@ -1,5 +1,6 @@
 package com.porterking.commonlibrary.utils.des
 
+import android.text.TextUtils
 import java.lang.Exception
 import kotlin.reflect.KProperty
 
@@ -9,20 +10,26 @@ import kotlin.reflect.KProperty
 open class DesCryptEngine {
     private val descCrypt :DesCrypt? by DesDelegate()
 
-    fun encode(content:String):String{
+    fun encode(content:String?):String{
         var res = ""
+        if(TextUtils.isEmpty(content)){
+            return res
+        }
         try {
-            res = descCrypt!!.encrypt(content)
+            res = descCrypt!!.encrypt(content!!)
         }catch (e:Exception){
             e.printStackTrace()
         }
         return res
     }
 
-    fun decode(content:String):String{
+    fun decode(content:String?):String{
         var res = ""
+        if(TextUtils.isEmpty(content)){
+            return res
+        }
         try {
-            res = descCrypt!!.decrypt(content)
+            res = descCrypt!!.decrypt(content!!)
         }catch (e:Exception){
             e.printStackTrace()
         }
